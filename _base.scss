@@ -1,0 +1,53 @@
+/* =========================================
+   ESTILOS GENERALES Y TIPOGRAFÍAS
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuentes */
+@font-face {
+    font-family: 'DesignerCustom';
+    src: url('../fonts/Designer.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratCustom';
+    src: url('../fonts/Montserrat-SemiBold.ttf.eot');
+    src: url('../fonts/Montserrat-SemiBold.ttf.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Montserrat-SemiBold.ttf.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Etiquetas Base */
+body {
+    background-color: $color-azul-oscuro;
+    color: $color-blanco-humo;
+    font-family: $fuente-textos; // Usamos la variable
+}
+
+h1, .titulos {
+    font-family: $fuente-titulos;
+    color: $color-azul-oscuro;
+    background-color: $color-rojo;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+p {
+    color: $color-blanco-humo;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+.explicacion {
+    text-align: justify;
+    text-decoration: underline;
+}
