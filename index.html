@@ -3,36 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toro Treinta Indumentaria Deportiva</title>
+    
+    <meta name="description" content="Catálogo completo de Toro Treinta. Indumentaria deportiva, chalecos puffer, camperas y ropa personalizada.">
+    <meta name="keywords" content="ropa deportiva, chaleco puffer, buzo personalizado, bermuda cargo, toro treinta">
+    
+    <title>Inicio | Toro Treinta Indumentaria Deportiva</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
-    <header>
-        <!--logo de la marca-->
-        <img class="logo" src="./img/logos/TOROTREINTA-IMAGOTIPO-NEGRO.png" alt="Logo de marca Toro Treinta">
+    
+    <header class="header-toro p-0">
+        <div class="logo-container text-center pt-2 pb-1">
+            <a href="index.html" class="m-0 p-0" style="line-height: 0;">
+                <img class="logo" src="./img/PNG/TOROTREINTA-IMAGOTIPO-NEGRO.png" alt="Logo de marca Toro Treinta">
+            </a>
+        </div>
         
-        <section>
-            <h1 class="titulos">UNA PARTE DE MÍ, DE LO QUE SOY</h1>
-        </section> <nav class="section-padre">
-            <ul>
-                <li class="menu"><a href="./paginas/invierno.html">Invierno</a></li>
-                <li class="menu"><a href="./paginas/deportivo.html">Deportivo</a></li>
-                <li class="menu"><a href="./paginas/urbano.html">Urbano</a></li>
-                <li class="menu"><a href="./paginas/promociones.html">Promociones</a></li>  
-            </ul>
+        <nav class="navbar navbar-expand-lg p-0 m-0 w-100">
+            <div class="container justify-content-center">
+                <button class="navbar-toggler mx-auto my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav text-center m-0 p-0">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./paginas/invierno.html">Invierno</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./paginas/deportivo.html">Deportivo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./paginas/personalizados.html">Personalizados</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./paginas/verano.html">Verano</a></li>  
+                    </ul>
+                </div>
+            </div>
         </nav>
-
-        <div class="fondodepagina"></div> 
     </header>
 
-    <main>
-        <section>
-            <p class="explicacion">EL PORQUÉ DE TORO TREINTA: TORO fue un apodo que se arrastra de ya un par de años por mi forma de jugar en la cancha y TREINTA es mi número favorito, el que me acompañó por toda mi vida futbolística.</p>
+    <!-- UN ÚNICO CONTENEDOR PRINCIPAL QUE ABRAZA TODO -->
+    <main class="container my-5">
+        
+        <!-- SECCIÓN DE CATÁLOGO COMPLETO -->
+        <section class="productos-destacados text-center mb-5">
+            <h2 class="titulos mb-4">Catálogo Completo</h2>
+            
+            <div class="grilla-productos">
+                <article class="producto-card">
+                    <img src="./img/ROPA SUELTA/NUEVAS FOTOS/CHALECO AZUL.png" alt="Chaleco azul" class="img-fluid">
+                    <h3>Chaleco puffer</h3>
+                    <p class="precio">$30.000</p>
+                    <h4>TALLES: 1-M / 1-2XL / 1-3XL</h4>
+                </article>
+
+                <article class="producto-card">
+                    <img src="./img/ROPA SUELTA/NUEVAS FOTOS/CHALECO NEGRO.png" alt="Chaleco Negro" class="img-fluid">
+                    <h3>Chaleco puffer</h3>
+                    <p class="precio">$30.000</p>
+                    <h4>TALLES: 1-M / 1-L / 1-XL / 1-2XL / 1-3XL</h4>
+                </article>
+
+                <article class="producto-card">
+                    <img src="./img/ROPA SUELTA/NUEVAS FOTOS/CHALECO GRIS.png" alt="Chaleco Gris" class="img-fluid">
+                    <h3>Chaleco puffer</h3>
+                    <p class="precio">$30.000</p>
+                    <h4>TALLES: 1-L / 1-2XL</h4>
+                </article>
+
+                <article class="producto-card">
+                    <img src="./img/ROPA SUELTA/NUEVAS FOTOS/ADIDAS ROJA.png" alt="Campera Adidas" class="img-fluid">
+                    <h3>Campera 3 tiras</h3>
+                    <p class="precio">$30.000</p>
+                    <h4>TALLE: M</h4>
+                </article>
+
+                <article class="producto-card">
+                    <img src="./img/ROPA SUELTA/NUEVAS FOTOS/BUZO PERSONALIZADO.png" alt="Buzo 11 corazones" class="img-fluid">
+                    <h3>Buzo Personalizado</h3>
+                    <p class="precio">$40.000</p>
+                    <h4>TALLES: DEL 10 AL 3XL</h4>
+                </article>
+
+                <article class="producto-card">
+                    <img src="./img/ROPA SUELTA/NUEVAS FOTOS/BERMUDA BEIGE CLARO.png" alt="bermuda beige claro" class="img-fluid">
+                    <h3>Bermuda Cargo Beige Claro</h3>
+                    <p class="precio">$30.000</p>
+                    <h4>TALLES: 40</h4>
+                </article>
+
+                <article class="producto-card">
+                    <img src="./img/ROPA SUELTA/NUEVAS FOTOS/BERMUDA MARRON.png" alt="bermuda marron" class="img-fluid">
+                    <h3>Bermuda Cargo Marrón</h3>
+                    <p class="precio">$30.000</p>
+                    <h4>TALLES: 44</h4>
+                </article>
+
+                <article class="producto-card">
+                    <img src="./img/ROPA SUELTA/NUEVAS FOTOS/BUZO KEY.png" alt="buzo key" class="img-fluid">
+                    <h3>Buzo key</h3>
+                    <p class="precio">$25.000</p>
+                    <h4>TALLES: M</h4>
+                </article>
+
+                <article class="producto-card">
+                    <img src="./img/ROPA SUELTA/NUEVAS FOTOS/CAMPERON NEGRO.png" alt="camperon lacoste" class="img-fluid">
+                    <h3>Camperón cocodrilo</h3>
+                    <p class="precio">$50.000</p>
+                    <h4>TALLES: L</h4>
+                </article>
+
+                <article class="producto-card">
+                    <img src="./img/ROPA SUELTA/NUEVAS FOTOS/BUZO NORTH.png" alt="buzo north" class="img-fluid">
+                    <h3>Buzo medio cierre north</h3>
+                    <p class="precio">$25.000</p>
+                    <h4>TALLES: 2XL</h4>
+                </article>
+            </div>
         </section>
+
+        <!-- SECCIÓN DE VIDEOS (TAMAÑO REDUCIDO) -->
+        <section class="videos-destacados text-center mb-5">
+            <h1 class="titulos mb-4">Calidad en Movimiento</h1>
+            
+            <div class="row justify-content-center gap-3">
+                <!-- Video 1 -->
+                <div class="col-10 col-sm-5 col-md-3">
+                    <video class="w-100 shadow" style="border-radius: 12px; border: 2px solid #d81d38;" controls autoplay muted loop>
+                        <source src="./img/ROPA SUELTA/NUEVAS FOTOS/9758dfe24f004ca087e7bcfdcb404783.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+                
+                <!-- Video 2 -->
+                <div class="col-10 col-sm-5 col-md-3">
+                    <video class="w-100 shadow" style="border-radius: 12px; border: 2px solid #d81d38;" controls autoplay muted loop>
+                        <source src="./img/ROPA SUELTA/NUEVAS FOTOS/6b95bfffbcdf47a2a9dab90197746b24.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="col-10 col-sm-5 col-md-3">
+                    <video class="w-100 shadow" style="border-radius: 12px; border: 2px solid #d81d38;" controls autoplay muted loop>
+                        <source src="./img/ROPA SUELTA/NUEVAS FOTOS/IMG_7997.mp4" type="video/mp4">
+                        Tu navegador no soporta el formato de video.
+                    </video>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <p>&copy; 2026 Toro Treinta Indumentaria Deportiva. Todos los derechos reservados.</p>
+    <footer class="footer-toro mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+                    <h5 class="marca-footer">TORO TREINTA</h5>
+                    <p class="slogan-footer">Una parte de mí, de lo que soy.</p>
+                </div>
+                
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    
+                </div>
+                
+                <div class="col-md-4 text-center text-md-end redes-footer">
+                    <a href="https://www.instagram.com/torotreinta_indumentaria/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/share/18k4D5RDm9/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://wa.me/5491128944298" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-12 text-center copyright">
+                    <p class="m-0">&copy; 2026 Toro Treinta Indumentaria. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
