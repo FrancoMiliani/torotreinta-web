@@ -1,0 +1,69 @@
+/* =========================================
+   PÁGINA DE INICIO (VIDRIERA)
+   ========================================= */
+
+.productos-destacados {
+    // Da espacio arriba/abajo (40px) y a los lados (20px) para que no toque los bordes
+    padding: 40px 20px;
+    text-align: center;
+
+    h2 {
+        // Separa el título "Catálogo Completo" de las fotos
+        margin-bottom: 30px;
+    }
+
+    // --- LA MAGIA DE LA GRILLA ---
+    .grilla-productos {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        justify-content: center; 
+        gap: 30px; 
+        max-width: 1200px; 
+        margin: 0 auto; 
+    }
+
+    // --- DISEÑO DE CADA PRENDA (TARJETA INVISIBLE) ---
+    .producto-card {
+        background-color: transparent; 
+        padding: 0; 
+        max-width: 320px; 
+        margin: 0 auto; 
+        width: 100%;
+        transition: transform 0.3s ease; 
+        text-align: center; 
+
+        &:hover {
+            transform: translateY(-5px); 
+        }
+
+        img {
+            width: 100%; 
+            height: auto; 
+            border-radius: 12px; 
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
+            display: block; 
+        }
+
+        h3 {
+            color: $color-blanco-humo; 
+            font-family: $fuente-titulos; 
+            margin: 15px 0 5px; 
+            font-size: 20px;
+        }
+
+        .precio {
+            color: $color-blanco-humo; 
+            font-weight: bold; 
+            font-size: 22px; 
+            padding: 0; 
+            margin: 0;
+        }
+
+        h4 {
+            color: $color-blanco-humo; 
+            font-size: 16px;
+            margin-top: 5px; 
+            font-weight: normal;
+        }
+    } // Cierra .producto-card
+} // Cierra .productos-destacados (¡Esta era la que faltaba!)

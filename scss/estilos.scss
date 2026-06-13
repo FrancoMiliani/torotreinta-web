@@ -1,0 +1,271 @@
+// =========================================
+// VARIABLES (Tus colores exactos)
+// =========================================
+$color-rojo: #d81d38;
+$color-fondo: #252c3d;
+$color-texto: #f5f5f5;
+
+// =========================================
+// MIXINS
+// =========================================
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin transicion-suave {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+// =========================================
+// FUENTES ORIGINALES
+// =========================================
+@font-face {
+    font-family: "DesignerCustom";
+    src: url("../fonts/Designer.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "MontserratCustom";
+    src: url("../fonts/Montserrat-SemiBold.ttf.eot");
+    src: url("../fonts/Montserrat-SemiBold.ttf.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-SemiBold.ttf.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+// =========================================
+// ESTILOS GENERALES
+// =========================================
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-fondo;
+    color: $color-texto;
+    font-family: "MontserratCustom", sans-serif;
+}
+
+h1, .titulos {
+    font-family: "DesignerCustom", sans-serif;
+    color: $color-texto;
+    background-color: $color-rojo;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+p {
+    color: $color-texto;
+    line-height: 1.6;
+}
+
+.explicacion {
+    text-align: justify;
+    text-decoration: underline;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+// =========================================
+// HEADER RESPONSIVE INTEGRADO
+// =========================================
+.header-toro {
+    background-color: $color-rojo;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 0 !important;
+
+    .logo-container {
+        background-color: $color-rojo;
+        width: 100%;
+    }
+
+    .logo {
+        max-height: 70px !important; 
+        width: auto;
+        display: block;
+        margin: 10px auto;
+        
+        @media (max-width: 991px) {
+            max-height: 50px !important; 
+        }
+    }
+
+    .navbar {
+        background-color: $color-fondo; 
+        width: 100%;
+        padding: 12px 0 !important;
+        border-top: 2px solid rgba(0,0,0,0.2); 
+    }
+
+    .navbar-nav {
+        gap: 1.5rem;
+        
+        @media (max-width: 991px) {
+            gap: 0.5rem; 
+            margin-top: 10px;
+        }
+        
+        .nav-item .nav-link {
+            color: $color-texto !important;
+            text-transform: uppercase;
+            padding: 8px 24px !important;
+            border: 1px solid rgba(255, 255, 255, 0.15); 
+            border-radius: 50px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            @include transicion-suave;
+
+            &:hover, &.active {
+                background-color: $color-rojo;
+                border-color: $color-rojo;
+                color: #ffffff !important;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+}
+
+// =========================================
+// GRILLA DE PRODUCTOS Y TARJETAS
+// =========================================
+.productos-destacados {
+    padding: 40px 20px;
+    text-align: center;
+
+    .grilla-productos {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        justify-content: center;
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .producto-card {
+        background-color: transparent;
+        max-width: 320px;
+        margin: 0 auto;
+        width: 100%;
+        @include transicion-suave;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            display: block;
+        }
+
+        h3 {
+            color: $color-texto;
+            font-family: "DesignerCustom", sans-serif;
+            margin: 15px 0 5px;
+            font-size: 20px;
+        }
+
+        .precio {
+            color: $color-texto;
+            font-weight: bold;
+            font-size: 22px;
+            margin: 0;
+        }
+
+        h4 {
+            color: $color-texto;
+            font-size: 16px;
+            margin-top: 5px;
+            font-weight: normal;
+        }
+    }
+}
+
+// =========================================
+// FOOTER PROFESIONAL
+// =========================================
+.footer-toro {
+    background-color: $color-fondo; // Fondo oscuro para dar peso
+    padding: 50px 0 20px 0;
+    margin-top: 60px;
+    border-top: 4px solid $color-rojo; // Línea roja para conectar con la marca
+
+    .marca-footer {
+        font-family: "DesignerCustom", sans-serif;
+        color: $color-texto;
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+    }
+
+    .slogan-footer {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.95rem;
+        margin: 0;
+    }
+
+    .enlaces-footer {
+        a {
+            color: $color-texto;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            @include transicion-suave;
+
+            &:hover {
+                color: $color-rojo;
+            }
+        }
+    }
+
+    .redes-footer {
+        a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 45px;
+            height: 45px;
+            background-color: rgba(255, 255, 255, 0.05); // Círculo sutil
+            color: $color-texto;
+            text-decoration: none;
+            border-radius: 50%;
+            margin-left: 12px;
+            font-size: 1.3rem; // Tamaño del ícono
+            border: 1px solid rgba(255,255,255,0.1);
+            @include transicion-suave;
+
+            &:hover {
+                background-color: $color-rojo;
+                border-color: $color-rojo;
+                transform: translateY(-4px); // Salto hacia arriba
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+
+    .copyright {
+        margin-top: 30px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+        p {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 13px;
+        }
+    }
+}

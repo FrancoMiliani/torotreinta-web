@@ -1,0 +1,29 @@
+/* =========================================
+   PIE DE PÁGINA (FOOTER)
+   ========================================= */
+
+footer {
+    // Le ponemos el fondo rojo para que haga juego con la barra superior de tu menú
+    background-color: $color-rojo; 
+    
+    // El padding le da "aire" por dentro. 20px arriba y abajo, 0 a los lados.
+    padding: 20px 0; 
+    
+    // Esto asegura que tu texto de derechos de autor quede justo en el medio
+    text-align: center; 
+    
+    // Esto empuja el footer hacia abajo, separándolo 50px de tus productos
+    margin-top: 50px; 
+    
+    // Ahora le damos estilo específicamente al párrafo <p> que está adentro del footer
+    p {
+        // Usamos tu variable de color clarito para que contraste con el fondo rojo
+        color: $color-blanco-humo; 
+        
+        // Hacemos la letra un poco más chica (14px) porque es información secundaria
+        font-size: 14px; 
+        
+        // Le quitamos el espaciado lateral que le habíamos puesto a los párrafos en _base.scss
+        padding: 0; 
+    }
+}

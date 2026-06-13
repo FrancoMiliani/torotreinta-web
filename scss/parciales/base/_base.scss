@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuentes */
+@font-face {
+    font-family: 'DesignerCustom';
+    src: url('../fonts/Designer.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratCustom';
+    src: url('../fonts/Montserrat-SemiBold.ttf.eot');
+    src: url('../fonts/Montserrat-SemiBold.ttf.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Montserrat-SemiBold.ttf.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Etiquetas Base */
+body {
+    background-color: $color-azul-oscuro;
+    color: $color-blanco-humo;
+    font-family: $fuente-textos;
+}
+
+h1, .titulos {
+    font-family: $fuente-titulos;
+    
+    // 1. Cambiamos la letra a blanco humo para un contraste perfecto
+    color: $color-blanco-humo; 
+    
+    background-color: $color-rojo;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    
+    // 2. Le damos un poco de "aire" a la franja roja por dentro
+    padding: 10px 0; 
+}
+p {
+    color: $color-blanco-humo;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+.explicacion {
+    text-align: justify;
+    text-decoration: underline;
+}
